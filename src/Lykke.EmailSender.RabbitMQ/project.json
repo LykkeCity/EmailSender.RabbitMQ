@@ -1,9 +1,9 @@
-﻿{
+{
   "version": "1.0.0-*",
 
   "dependencies": {
-    "Lykke.EmailSender": "1.0.2",
-    "Lykke.RabbitMqBroker": "1.0.18",
+    "Lykke.EmailSender": "1.0.3",
+    "Lykke.RabbitMqBroker": "1.0.21",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.1.0"

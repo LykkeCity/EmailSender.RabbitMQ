@@ -30,6 +30,8 @@ namespace Lykke.EmailSender.RabbitMQ
             }
         }
 
+
+        public string Email { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
         public bool IsHtml { get; set; }
@@ -46,6 +48,7 @@ namespace Lykke.EmailSender.RabbitMQ
         {
             return new EmailRabbitMqContract
             {
+                Email = model.Email,
                 Subject = model.Subject,
                 Body = model.Body,
                 IsHtml = model.IsHtml,
@@ -61,6 +64,7 @@ namespace Lykke.EmailSender.RabbitMQ
         {
             return new EmailModel
             {
+                Email = src.Email,
                 Subject = src.Subject,
                 Body = src.Body,
                 IsHtml = src.IsHtml,
